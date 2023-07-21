@@ -1,144 +1,613 @@
 <!DOCTYPE html>
-<html>
-<title>Welcome dear visitor!</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<head>
+    <title>Nicolas Woltmann</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="/nico-ow.css">
+    <script src="index.js"></script>
+</head>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+<body id="background" class="no_margin">
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nico</h1>
-    <p>Just trying to have some fun in this world</p>
-  </header>
+    <!-- Main Container (contains everything in the body) -->
+    <div class="main_container">
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">That's what I do</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Having fun</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+        <!-- Page Container -->
+        <div class="content_container padding">
+
+            <!-- The Grid -->
+            <div class="grid">
+
+                <!-- Left Column / Profile - Languages, etc.-->
+                <div class="grid_one_third">
+
+                    <div class="white_bg grey shadow sticky">
+                        <div>
+                            <img src="/files/nicolas.jpg" style="width:100%" alt="nicolas">
+
+                            <div class="container black padding">
+                                <h2>
+                                    Nicolas <abbr title="formerly Obriot">Woltmann</abbr>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="padding">
+                            <p><i class="fa-solid fa-briefcase fa-fw margin_right large grey"></i>Telecommunications/Software engineer
+                            </p>
+                            <p><i class="fa-solid fa-home fa-fw margin_right large grey"></i>Copenhagen, Denmark</p>
+
+                            <hr>
+
+                            <p class="large"><b><i class="fa fa-globe fa-fw margin_right grey"></i>Languages</b></p>
+
+                            <ul class="language_list">
+                                <li><b>English</b> (Full working proficiency) </li>
+                                <li><b>French</b> (Native) </li>
+                                <li title="Full proficiency for lunch talks &#x1F609;"><b>Danish</b> (Limited Working proficiency) </li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column / individual sections -->
+                <div class="grid_two_thirds">
+
+                    <!-- Profile -->
+                    <div class="white_bg shadow padding margin_bottom">
+                        <h2 class="grey padding_top_bottom" id="profile_title"><i class="fa-solid fa-caret-right" id="profile_caret"></i> <i class="fa-solid fa-user fa-fw margin_right red"></i>Profile</h2>
+                        <div class="padding" id="profile" style="display:none;">
+                            <p class="margin_bottom_only">
+                                Hey There! &#x1F642;<br>I'm Nicolas, originally from France and now happily living in Denmark.<br><br> During the past 10 years, I've worked in various fields such as software development, conformance testing, standardization,
+                                and technical writing. My background led me to specialize around wireless protocols, both in the dynamic world of mobile (LTE) and the innovative realm of IoT/short-range protocols (Z&#8209;Wave).
+                                <br>
+                                <br>However, I would welcome new challenges that would allow me to learn something new.<br>As a person, I am way too optimistic, quite detail oriented, and I like to execute well, making sure that everything works as intended.
+                                &#x1F601;
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Work Experience-->
+                    <div class="white_bg shadow padding margin_bottom">
+                        <h2 class="grey padding_top_bottom" id="work_experience_title"><i class="fa-solid fa-caret-right" id="work_experience_caret"></i> <i class="fa fa-suitcase fa-fw margin_right red"></i>Work Experience
+                        </h2>
+                        <div id="work_experience" style="display:none;">
+                            <!-- Silabs Associate Staff -->
+                            <div class="padding">
+                                <h5 class="grey"><b>Associate Staff Software Development Engineer</b> @ <a href="https://www.silabs.com/" target="_blank">Silicon Labs</a></h5>
+                                <h6 class="red"><i class="fa-solid fa-calendar-days fa-fw margin_right"></i>April 2022 - July 2023</h6>
+                                <p>
+                                    Specification/Development of the <a href="https://github.com/SiliconLabs/UnifySDK" target="_blank"> Silicon Labs Unify SDK</a>.
+                                    <br> Chair of the Application Work Group at the <a href="https://z-wavealliance.org/" target="_blank">Z-Wave Alliance</a>.
+                                </p>
+
+                                <hr>
+                            </div>
+
+                            <!-- Silabs Senior -->
+                            <div class="padding">
+                                <h5 class="grey"><b>Senior Software Engineer</b> @ <a href="https://www.silabs.com/" target="_blank">Silicon Labs</a></h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>April 2018 - March 2022</h6>
+                                <p>
+                                    Specification/Development of the <a href="https://github.com/SiliconLabs/UnifySDK" target="_blank"> Silicon Labs Unify SDK</a>.
+                                    <br> Development of the Z-Wave Application Framework for embedded devices
+                                    <br> Ported the Z-Wave Specifications from Word to
+                                    <a href="https://www.sphinx-doc.org" target="_blank">Sphinx-doc</a>/<a href="https://docutils.sourceforge.io/rst.html" target="_blank">RST</a> format on a <a href=" https://github.com/Z-Wave-Alliance" target="_blank">GitHub repository</a>.
+                                    <br> Chair of the Application Work Group at the <a href="https://z-wavealliance.org/" target="_blank">Z-Wave Alliance</a>.
+                                    <br> Generated material and training for developers.
+                                </p>
+                                <hr>
+                            </div>
+
+                            <!-- Sigma designs -->
+                            <div class="padding">
+                                <h5 class="grey"><b>Software Engineer</b> @ <a href="https://www.linkedin.com/company/sigma-designs/" target="_blank">Sigma Designs</a></h5>
+                                <h6 class="red"><i class="fa-solid fa-calendar-days margin_right"></i>November 2015 - March 2018</h6>
+                                <p>
+                                    Re-factoring of the Z-Wave Specifications.
+                                    <br>Development and specification of new functionalities, Security 2, SmartStart, new certifications programs
+                                    <br>Collaboration with test labs to improve Z-Wave certification
+                                    <br>Development of sample applications
+                                </p>
+                                <hr>
+                            </div>
+
+                            <!-- Telenor -->
+                            <div class="padding">
+                                <h5 class="grey"><b>RAN Engineer</b> @ <a href="https://www.telenor.dk/" target="_blank">Telenor</a></h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>February 2014 - October 2015</h6>
+                                <p>
+                                    Planning, configuration and optimization of the LTE Radio Access Network.
+                                    <br>Benchmarks, network measurements, virtual drivetests for different research projects.
+                                    <hr>
+                            </div>
+
+                            <!-- Agilent -->
+                            <div class="padding">
+                                <h5 class="grey"><b>R&amp;D Telecommunication Engineer</b> @ <a href="https://www.keysight.com/" target="_blank">Agilent Technologies</a></h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>January 2013 - January 2014</h6>
+                                <p>
+                                    Conducted research on channel modelling and conformance testing for LTE MIMO devices.
+                                    <br>Contributed to and attended to
+                                    <a href="https://www.3gpp.org/3gpp-groups/radio-access-networks-ran" target="_blank">3GPP RAN Workgroup meetings</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education-->
+                    <div class="white_bg shadow padding margin_bottom">
+                        <h2 class="grey padding_top_bottom" id="education_title"><i class="fa-solid fa-caret-right" id="education_caret"></i> <i class="fa fa-solid fa-graduation-cap margin_right red"></i>Education
+                        </h2>
+                        <div id="education" style="display:none;">
+                            <div class="padding">
+                                <h5 class="grey"><b>Master of Sciences in Mobile Communication Systems</b> @ <a href="https://www.en.aau.dk/" target="_blank">Aalborg University</a></h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>2011-2012</h6>
+                                <p>
+                                    <u>Master 's Thesis</u>: Signal modeling and foundations of Near-field Naval MIMO radar for small targets discrimination.
+                                </p>
+                                <hr>
+                            </div>
+
+                            <div class="padding">
+                                <h5 class="grey"><b>Engineering School / Master's degree</b> @ <a href="https://www.ece.fr/" target="_blank">ECE (École Centrale d'Électronique)</a></h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>2007-2012</h6>
+                                <p>Telecommunications and Networks Major.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Skills -->
+                    <div class="white_bg shadow padding margin_bottom">
+                        <h2 class="grey padding_top_bottom" id="skills_title"><i class="fa-solid fa-caret-right" id="skills_caret"></i> <i class="fa fa-sharp fa-solid fa-file-circle-check margin_right red"></i>Skills and certifications</h2>
+                        <div id="skills" style="display:none;">
+                            <div class="grid padding">
+                                <div class="grid_half_1">
+                                    <h6><i class="fa fa-code fa-fw margin_right red"></i><b>Programming</b></h6>
+                                    <div>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">C</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa fa-brands fa-python"></i> Python</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">C++</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa fa-brands fa-rust"></i> Rust</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold" title="This website should show more or less what I can do"><i class="fa-brands fa-html5"></i> HTML/CSS</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">SQL</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-php"></i> PHP</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-js"></i> Javascript</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+                                <div class="grid_half_2">
+                                    <h6><i class="fa fa-screwdriver-wrench margin_right red"></i><b>Tools</b></h6>
+                                    <div>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold" title="I love drawing graphs &#x2764;"> PlantUML</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-git"></i> Git</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"> LaTeX</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item" title="Jira, Confluence, Stash, etc.">
+                                            <dt class="hover_bold"><i class="fa-brands fa-atlassian"></i> Atlassian Software</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">Apache web server</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">CMake</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-docker"></i> Docker</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item" title="Sorry! I always wanted to make fun of MS office as a skill &#x1F61C;">
+                                            <dt class="hover_bold"><i class="fa-brands fa-microsoft"></i> Microsoft Office</dt>
+                                            <dd>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+                                <!-- Skills second part -->
+                                <div class="grid_half_1">
+                                    <h6><i class="fa-solid fa-computer margin_right red"></i><b>Operating Systems</b></h6>
+                                    <div>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-linux"></i> Linux</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-apple"></i> Mac OS</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-windows"></i> Windows</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"><i class="fa-brands fa-android"></i> Android</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item" title="Never used an iPhone! &#x1F642;">
+                                            <dt class="hover_bold"><i class="fa-brands fa-apple"></i> iOS</dt>
+                                            <dd>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+                                <div class="grid_half_2">
+                                    <h6><i class="fa-solid fa-tower-cell margin_right red"></i><b>Protocols</b></h6>
+                                    <div>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">Z-Wave</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold"> ZigBee / Matter</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">MQTT</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item">
+                                            <dt class="hover_bold">TCP/IP</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                        <dl class="skill_item" title="I am rusty at this">
+                                            <dt class="hover_bold">LTE</dt>
+                                            <dd>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-solid fa-star hover_red"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <hr>
+                            <div class="padding">
+                                <h5 class="grey"><b>CCNA 640-802</b> (Switching and Routing)</h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i> November 2012 - November 2015 (Expired)</h6>
+                                <p>Took a certification right after graduation, never used it for much though... So now I keep it in the CV ! &#x1F601;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hobbies-->
+                    <div class="white_bg shadow padding">
+                        <h2 class="grey padding_top_bottom" id="hobbies_title"><i class="fa-solid fa-caret-right" id="hobbies_caret"></i> <i class="fa fa-gamepad fa-fw margin_right red"></i>Hobbies</h2>
+
+                        <div id="hobbies" style="display:none;">
+                            <div class="padding">
+                                <h5 class="grey"><b>Running</b> &#x1F3C3;</h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i> 2010 - <span class="round_box red_bg white">Now</span></h6>
+
+                                <p>
+                                    I enjoy running around, training, and participate in races in some periods. Here are my PBs on different distances:
+                                </p>
+                                <table>
+                                    <caption>
+                                        Personal best on different distances
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Distance</th>
+                                            <th>Race time</th>
+                                            <th class="hide_small">Avg pace</th>
+                                            <th class="hide_medium">Avg speed</th>
+                                            <th class="hide_small">Year</th>
+                                            <th>Official results</th>
+                                            <th>Strava activity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>5km</td>
+                                            <td>17:15</td>
+                                            <td class="hide_small">3:27 min/km</td>
+                                            <td class="hide_medium">17.39 km/h</td>
+                                            <td class="hide_small">2019</td>
+                                            <td><a href="https://live.ultimate.dk/desktop/front/index.php?eventid=4460&ignoreuseragent=true" target="_blank">Link</a></td>
+                                            <td><a href="https://www.strava.com/activities/2601994863/overview" target="_blank">Strava</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10km</td>
+                                            <td>36:51</td>
+                                            <td class="hide_small">3:42 min/km</td>
+                                            <td class="hide_medium">16,28 km/h</td>
+                                            <td class="hide_small">2018</td>
+                                            <td><a href="https://live.ultimate.dk/desktop/front/index.php?eventid=4271&language=dk&ignoreuseragent=true&language=us" target="_blank">Link</a></td>
+                                            <td><a href="https://www.strava.com/activities/1930146149" target="_blank">Strava</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13.3km</td>
+                                            <td>48:12</td>
+                                            <td class="hide_small">3:38 min/km</td>
+                                            <td class="hide_medium">16,56 km/h</td>
+                                            <td class="hide_small">2019</td>
+                                            <td><a href="https://live.ultimate.dk/desktop/front/index.php?eventid=4484&ignoreuseragent=true" target="_blank">Link</a></td>
+                                            <td><a href="https://www.strava.com/activities/2766869226" target="_blank">Strava</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15km</td>
+                                            <td>55:16</td>
+                                            <td class="hide_small">3:42 min/km</td>
+                                            <td class="hide_medium">16,28 km/h</td>
+                                            <td class="hide_small">2019</td>
+                                            <td><a href="https://live.ultimate.dk/desktop/front/index.php?eventid=4634&language=us&ignoreuseragent=true" target="_blank">Link</a></td>
+                                            <td><a href="https://www.strava.com/activities/2818338561" target="_blank">Strava</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Half-marathon</td>
+                                            <td>1:23:02</td>
+                                            <td class="hide_small">3:57 min/km</td>
+                                            <td class="hide_medium">15.19 km/h</td>
+                                            <td class="hide_small">2021</td>
+                                            <td><a href="https://live.ultimate.dk/desktop/front/index.php?eventid=5069" target="_blank">Link</a></td>
+                                            <td><a href="https://www.strava.com/activities/5984846942/overview" target="_blank">Strava</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <hr>
+                            </div>
+
+                            <div class="padding">
+                                <h5 class="grey"><b>Skydiving/Wind tunnel</b> &#x1FA82;</h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>2006 - 2011 / 2017 - <span class="round_box red_bg white">Now</span></h6>
+
+                                <p>
+                                    <b>Wind Tunnel</b>: Approx. 25 hours<br>
+                                    <b>Skydiving</b>: Approx. 400 jumps
+                                </p>
+                                <ul class="language_list_fr_dk">
+                                    <li><b><a href="https://www.ffp.asso.fr/" target="_blank">French Licences</a></b>: B2, B4, BPA </li>
+                                    <li><b><a href="https://dfu.dk/" target="_blank">Danish Licences</a></b>: D licence, Freefly: HU1, HU2, HD1, HD2</li>
+                                </ul>
+                                <hr>
+                            </div>
+
+                            <div class="padding">
+                                <h5 class="grey"><b>Chess</b> &#x265B;</h5>
+                                <h6 class="red"><i class="fa fa-calendar-days margin_right"></i>2019 - <span class="round_box red_bg white">Now</span></h6>
+
+                                <p>Started playing online a little bit a while back during parental leave.<br> Also started to program a chess-playing lichess robot in my free time, as a Rust learning exercise.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <a href="https://lichess.org/@/SchnellSchnecke" target="_blank"><img draggable="true" src="/files/black_horsey_with_hat.png" style="width:24px" alt="black_horsey_with_hat"> Lichess User Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://lichess.org/@/schnecken_bot" target="_blank"><i class="fa-solid fa-robot"></i> Lichess robot</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- End Right Column -->
+                </div>
+
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Content container -->
+        </div>
+
+        <footer class="padding_top_bottom text_center red_bg">
+            <p>Find me on other platforms:</p>
+            <a href="https://github.com/nobriot" target="_blank"><i class="fa fa-brands fa-github hover-opacity xl_font"></i></a>
+            <a href="http://lnkd.in/4VK-NQ" target="_blank"><i class="fa fa-brands fa-linkedin hover-opacity xl_font"></i></a>
+            <a href="https://www.strava.com/athletes/2503768" target="_blank"><i class="fa fa-brands fa-strava hover-opacity xl_font"></i></a>
+            <a href="https://discord.com/users/schnelleschnecke" target="_blank"><i class="fa fa-brands fa-discord hover-opacity xl_font"></i></a>
+        </footer>
+
+        <!-- End Main container -->
     </div>
-    <p class="w3-wide">Try to make the world a better place</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-    </div>
-    <p class="w3-wide">Listening others</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">17:15</span><br>
-        Best 5K
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">30+</span><br>
-        Age
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1700</span><br>
-        Lichess rating
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">6</span><br>
-        Bikes
-      </div>
-    </div>
-
-    
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/images/skydiving.jpg" style="width:100%">
-        <img src="/images/motorcycling.jpg" style="width:100%">
-        <img src="/images/biking.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/images/running.jpg" style="width:100%">
-        <img src="/images/nicolas_bike_1.jpg" style="width:100%">
-        <img src="/images/cakes.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
 
 </body>
+
 </html>
