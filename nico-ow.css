@@ -22,15 +22,15 @@ h6 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 h6 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 a {
@@ -49,7 +49,7 @@ footer {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 
@@ -241,6 +241,15 @@ hr {
         position: sticky;
         top: 16px;
         left: 0px;
+    }
+}
+
+
+/* Screen not that tall, decrease a little the font size */
+
+@media (max-height: 800px) {
+    html {
+        font-size: 85%;
     }
 }
 
